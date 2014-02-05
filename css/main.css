@@ -1,0 +1,61 @@
+@font-face {
+   font-family: 'klavika';
+   src: url("fonts/Klavika-Light.otf") format("opentype");
+   font-weight: 100;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'klavika';
+   src: url("fonts/Klavika-Medium.otf") format("opentype");
+   font-weight: 400;
+   font-style: normal;
+}
+
+.create-lab-font {
+   font-family: klavika, Helvetica, Arial, sans-serif !important;
+
+}
+
+.title-text {
+   font-size: 18pt;
+   color: #494949;
+}
+
+.subtitle-text {
+   font-size: 12pt;
+   color: #494949;
+}
+
+#header {
+   text-align: center;
+}
+
+#body {
+   overflow: hidden;
+   width: 960px;
+   margin: 0px auto;
+}
+#body div {
+    width:225px;
+
+    float:left;
+    margin-bottom:20px;
+    margin-right: 7px;
+    text-align: center;
+} 
+
+#body div img {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+#body p {
+  text-align: left;
+  margin-top: 2px;
+  font-size: small;
+}
+#footer {
+   text-align: center;
+}
