@@ -2,6 +2,12 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #ededed;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 @font-face {
@@ -20,35 +26,42 @@ html, body {
 
 .create-lab-font {
   font-family: klavika, Helvetica, Arial, sans-serif !important;
-
 }
 
 .title-text {
-  font-size: 29pt;
-  color: #494949;
+  font-size: 23pt;
+  color: black;
 }
 
 .subtitle-text {
-  font-size: 15pt;
+  font-size: 21pt;
+  font-weight: 100;
   color: #494949;
+  margin-top: -10px;
 }
 
 #container {
   min-height: 100%;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 #header {
   text-align: center;
 }
 
-#detail-page-header {
+#header-titles {
   text-align: left;
-  margin: 10px;
 }
 
-#detail-page-header a {
+#header-titles a {
   text-decoration: none;
+}
+
+#site-description {
+  margin: 30px 0 30px 0;
 }
 
 #cmu-logo-detail-page {
@@ -70,26 +83,34 @@ html, body {
 #body {
   overflow: hidden;
   width: 960px;
-  margin: 0px auto;
+  margin: 20px auto 0;
   padding-bottom: 25px;
 }
 
-#body div {
+.thumbnail {
   width: 225px;
 
   float: left;
   margin-bottom: 20px;
   margin-right: 7px;
-  text-align: center;
 }
 
-#body div img {
+.thumbnail a {
+  color: black
+}
+
+.thumbnail-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
-#body p {
+.thumbnail-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.thumbnail-description {
   text-align: left;
   margin-top: 2px;
   font-size: small;
@@ -98,7 +119,11 @@ html, body {
 #footer {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 10px;
   text-align: center;
   height: 25px;
+}
+
+#footer a {
+  color: black;
 }
