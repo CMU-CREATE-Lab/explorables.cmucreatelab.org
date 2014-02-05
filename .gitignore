@@ -15,4 +15,6 @@ csv
 Vagrantfile
 bootstrap.sh
 
+# IntelliJ IDEA
+*.iws
 
