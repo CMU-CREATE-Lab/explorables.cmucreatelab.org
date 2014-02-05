@@ -41,6 +41,32 @@ html, body {
   text-align: center;
 }
 
+#detail-page-header {
+  text-align: left;
+}
+
+#detail-page-header a {
+  text-decoration: none;
+}
+
+#cmu-logo-detail-page {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 30px;
+  background-image: url('../img/CM_logo_horiz_black.png');
+  background-size: 200px 30px;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #cmu-logo-detail-page {
+    background-image: url('../img/CM_logo_horiz_black@2x.png');
+    background-size: 200px 30px;
+  }
+}
+
+
 #body {
   overflow: hidden;
   width: 960px;
