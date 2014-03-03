@@ -127,3 +127,22 @@ a {
 #footer a {
   color: black;
 }
+
+#embed {
+  float: left;
+  width: 560px;
+}
+
+#embed-description {
+  float: right;
+  width: 400px;
+}
+
+#embed-description ul {
+  list-style: none;
+  padding:0;
+}
+
+#embed-description ul a{
+  font-size: large;
+}
