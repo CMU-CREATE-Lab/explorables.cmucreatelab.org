@@ -353,7 +353,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/visualization.cmucreatelab.org.iml" filepath="$PROJECT_DIR$/visualization.cmucreatelab.org.iml" />
+      <module fileurl="file://$PROJECT_DIR$/explorables.cmucreatelab.org.iml" filepath="$PROJECT_DIR$/explorables.cmucreatelab.org.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true">
