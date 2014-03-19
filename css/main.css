@@ -26,7 +26,7 @@ a {
 
 .cmu-font {
   float: right;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 .create-lab-font {
@@ -46,6 +46,11 @@ a {
   margin-top: -10px;
 }
 
+.content-text {
+  text-align: left;
+  font-size: 11pt;
+}
+
 #container {
   height: 100%;
   position: relative;
@@ -58,7 +63,7 @@ a {
 
 #header {
   text-align: center;
-  width: 945px;
+  width: 943px;
 }
 
 #header-titles {
@@ -93,7 +98,7 @@ a {
   overflow: hidden;
   width: 960px;
   margin: 30px auto 0;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .thumbnail {
@@ -116,6 +121,7 @@ a {
 .thumbnail-title {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
 .thumbnail-description {
@@ -130,7 +136,6 @@ a {
   text-align: center;
   height: 25px;
   font-family: klavika, Helvetica, Arial, sans-serif !important;
-  bottom: 30px;
 }
 
 #footer a {
@@ -139,12 +144,15 @@ a {
 
 #embed {
   float: left;
-  width: 560px;
+  width: 520px;
+  margin-right: 20px;
+  margin-left: 2px;
 }
 
 #embed-description {
   float: right;
   width: 400px;
+  text-align: left;
 }
 
 #embed-description ul {
