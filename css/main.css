@@ -26,24 +26,26 @@ a {
 
 .cmu-font {
   float: right;
-  padding-top: 35px;
+  padding-top: 0px;
 }
 
 .create-lab-font {
   font-family: klavika, Helvetica, Arial, sans-serif !important;
-  padding-top: 30px;
+  padding-top: 6px;
 }
 
 .title-text {
+  float: left;
   font-size: 23pt;
   color: black;
+  margin-right: 10px;
 }
 
 .subtitle-text {
   font-size: 21pt;
   font-weight: 100;
+  margin-top: 1px;
   color: #494949;
-  margin-top: -10px;
 }
 
 .content-text {
@@ -64,6 +66,7 @@ a {
 #header {
   text-align: center;
   width: 943px;
+  background-color: #ededed;
 }
 
 #header-titles {
@@ -75,7 +78,7 @@ a {
 }
 
 #site-description {
-  margin: 20px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 #cmu-logo-detail-page {
@@ -83,13 +86,13 @@ a {
   width: 200px;
   height: 30px;
   margin-top: 10px;
-  background-image: url('../img/CM_logo_horiz_black.png');
+  background-image: url('../img/CM_logo_horiz_red.png');
   background-size: 200px 30px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #cmu-logo-detail-page {
-    background-image: url('../img/CM_logo_horiz_black@2x.png');
+    background-image: url('../img/CM_logo_horiz_red.png@2x.png');
     background-size: 200px 30px;
   }
 }
@@ -98,7 +101,6 @@ a {
   overflow: hidden;
   width: 960px;
   margin: 30px auto 0;
-  padding-bottom: 30px;
 }
 
 .thumbnail {
@@ -113,9 +115,9 @@ a {
 }
 
 .thumbnail-image {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .thumbnail-title {
@@ -131,10 +133,10 @@ a {
 }
 
 #footer {
-  position: absolute;
   width: 100%;
   text-align: center;
   height: 25px;
+  margin-top: 30px;
   font-family: klavika, Helvetica, Arial, sans-serif !important;
 }
 
@@ -162,4 +164,58 @@ a {
 
 #embed-description ul a{
   font-size: large;
+}
+
+#embed-fixed {
+  z-index: 2;
+  top: 45px;
+  width: 942px;
+  height: 488px;
+  margin-left: 2px;
+  background: #ededed;
+  -moz-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 10px 0px rgba(0,0,0,0.3);
+  border-bottom: 1px #ddd;
+}
+
+#embed-description-scroll {
+  z-index: 1;
+  position: absolute;
+  top: 530px;
+  width: 943px;
+  margin-left: 3px;
+  text-align: left;
+}
+
+#embed-description-scroll p {
+  font-size: 12pt;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#embed-description-scroll h2 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#embed-description-scroll .imgLeft {
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-top: 22px;
+  margin-bottom: -2px;
+  width: 308px;
+}
+
+#embed-description-scroll .imgSmall {
+  border-radius: 3px;
+  margin-right: 0px;
+  margin-top: 20px;
+  width: 308px;
+}
+
+#embed-description-scroll table {
+  border-spacing: 0px;
 }
