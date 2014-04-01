@@ -11,21 +11,20 @@
       var enableIframeRequest = true;
       var p1 = {
         "Taimali_River": 230,
-        "Heping_Power_Plant": 680,
-        "Taipei_Harbor": 1150,
-        "Datan_Power_Plant": 1590
+        "Heping_Power_Plant": 596,
+        "Taipei_Harbor": 958,
+        "Datan_Power_Plant": 1318
       };
       var p2 = {
-        "Taimali_River": 345,
-        "Heping_Power_Plant": 793,
-        "Taipei_Harbor": 1254,
-        "Datan_Power_Plant": 1698
+        "Taimali_River": 350,
+        "Heping_Power_Plant": 703,
+        "Taipei_Harbor": 1066
       };
       var pScrollTo = {
         "Taimali_River": 325,
-        "Heping_Power_Plant": 773,
-        "Taipei_Harbor": 1234,
-        "Datan_Power_Plant": 1678
+        "Heping_Power_Plant": 678,
+        "Taipei_Harbor": 1041,
+        "Datan_Power_Plant": 1391
       };
       // Handles the sending of cross-domain iframe requests.
       function post(type, data) {
@@ -56,7 +55,7 @@
         });
         $(window).scroll(function(event) {
           var currentScrollTop = $(event.currentTarget).scrollTop();
-          //console.log(currentScrollTop);
+          console.log(currentScrollTop);
           if(enableIframeRequest) {
             // Scroll down
             if (lastScrollTop < p1.Taimali_River && currentScrollTop >= p1.Taimali_River)
@@ -156,13 +155,6 @@
             The extreme amount of rain caused the sudden rise in river water level and the collapse of river bank.
             The water flooded the mouth area and resulted in the destruction of bridges, railways, buildings, and farms as shown in the right two images above retrieved from <a href="http://digimuse.nmns.edu.tw/taiwanlandform2/02_east/pageB/pageB_04_285.html">Taiwan National Museum of Natural Science</a>.
           </p>
-          <p>
-            Traditional Chinese Translation:<br>
-                                自然災害永久改變了台東太麻里溪河口的地貌。
-                                在2009年八月，颱風莫拉克夾帶 150km/h 的最大風速與 2777mm 的尖峰雨量從太平洋方向侵襲台灣。
-                                強大的降雨量使得溪水暴漲，最後太麻里溪堤防無法承受巨大的水量而潰堤。
-                                洪水泥流侵襲河口一帶並且沖毀了橋梁、南迴鐵路鐵道、房屋與農地如右上兩圖擷取自<a href="http://digimuse.nmns.edu.tw/taiwanlandform2/02_east/pageB/pageB_04_285.html">國立自然科學博物館網站</a>。
-          </p>
           <h2>Change 2: Heping Power Plant, Hualien</h2>
           <div>
             <img border="0" class="imgSmall" src="../img/timelapse-story-telling/Heping_.gif" />&nbsp;
@@ -174,14 +166,7 @@
             It is owned by Taiwan Cement Corporation and used to support the massive power needed for cement production.
             It generates 1320 Megawatt per year and is the largest power plant on Taiwan’s east coast.
             In the timelapse, the areas that change from green to white indicate limestone mines.
-            The mining process removes the top of several mountains as shown in the right two images above.
-          </p>
-          <p>
-            Traditional Chinese Translation:<br>
-                                和平發電廠是以煤炭為主要燃料的火力發電廠，興建於1999年並於2002年完工。
-                                位於台灣水泥公司的和平水泥工業園區內，鄰近工廠與專用港口，並供應製造水泥所需的大量電力。
-                                每年發電量132萬千瓦，為台灣東部最大電廠。延時攝影中綠色變為白色的部分為石灰岩礦山。
-                                開挖石灰岩礦的過程剷除幾座山頭如上方中圖的和仁礦場與右圖的勇士山礦場</a>。
+            The mining process removes the top of several mountains as shown in the right two images above retrieved from <a href="https://www.flickr.com/photos/aerofoto/">Taiwan Aerial Imaging</a>.
           </p>
           <h2>Change 3: Taipei Harbor, Taipei</h2>
           <div>
@@ -196,13 +181,6 @@
             The harbor shares bulk cargo volume with Keelung Harbor and thus reduces the heavy traffic load in central Taipei area.
             Right two images above are retrieved from <a href="http://www.tpport.gov.tw/tpport/EnRedirectForward.do">Taipei Port Branch Office website</a> and <a href="http://zh.wikipedia.org/wiki/%E5%8F%B0%E5%8C%97%E6%B8%AF">Wikipedia</a>.
           </p>
-          <p>
-            Traditional Chinese Translation:<br>
-                                台北港是一座由填海造陸而來的人工港，位於新北市八里區。
-                                此港口的設計為用於基隆港的輔助港，其面積與基隆港還大並且未來還可能會取代基隆港成為北台灣最大國際商港與物流中心。
-                                港口上的碼頭主要用於起降大型貨櫃。台北港也起到分擔基隆港大型貨物運輸的作用因而降低了台北市區繁忙的貨運交通量。
-                                上方右兩圖取自<a href="http://www.tpport.gov.tw/tpport/RedirectForward.do">台北港官方網站</a>與<a href="http://zh.wikipedia.org/wiki/%E5%8F%B0%E5%8C%97%E6%B8%AF">中文維基百科</a>。
-          </p>
           <h2>Change 4: Datan Power Plant, Taoyuan</h2>
           <div>
             <img border="0" class="imgSmall" src="../img/timelapse-story-telling/Datan_.gif" />&nbsp;
@@ -216,14 +194,6 @@
             Combining several thermodynamic cycles like reusing the waste heat of a previous heat engine improves the overall efficiency and reduces fuel cost.
             In addition, the power plant also has several wind power units operated by the wind from Taiwan Strait.
             The right two images above are retrieved from <a href="http://en.wikipedia.org/wiki/Tatan_Power_Plant">Wikipedia</a> and <a href="http://www.taipower.com.tw/e_content/index.aspx">Taiwan Power Company’s official website</a>.
-          </p>
-          <p>
-            Traditional Chinese Translation:<br>
-                                大潭發電廠是位在桃園的一座天然氣複循環電廠。此電廠緩和了南部與北部的電力供需失衡問題。
-                                以天然氣為燃料雖然使發電成本升高，但是卻減少了電廠的二氧化碳排放量，對自然環境比較友善而且降低了空氣汙染。
-                                複循環系統將幾個熱力學循環結合在一起，例如重複利用前一級機組產生的廢氣來驅動下一級發電機組，達到降低燃料成本與提高熱循環效率的成果。
-                                此電廠也設置了幾座風力發電機組利用台灣海峽的風力。
-                                上方右兩圖取自<a href="http://zh.wikipedia.org/wiki/%E5%A4%A7%E6%BD%AD%E7%99%BC%E9%9B%BB%E5%BB%A0">維基百科</a>與<a href="http://www.taipower.com.tw/content/new_info/new_info-b13c.aspx?LinkID=6">台灣電力公司網站</a>。
           </p>
           <div id="footer">
             <a href="http://www.ri.cmu.edu/">The Robotics Institute</a>&nbsp;|
