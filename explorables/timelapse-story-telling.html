@@ -6,6 +6,9 @@
     <link href="../css/main.css" media="screen" rel="stylesheet" type="text/css"/>
     <script src="../js/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="../js/postmessage.js" type="text/javascript"></script>
+    <style>
+      p
+    </style>
     <script>
       var lastScrollTop = 0;
       var enableIframeRequest = true;
@@ -17,16 +20,16 @@
       };
       var p2 = {
         "Taiwan": 25,
-        "Taimali_River": 350,
-        "Heping_Power_Plant": 703,
-        "Taipei_Harbor": 1066
+        "Taimali_River": 345,
+        "Heping_Power_Plant": 691,
+        "Taipei_Harbor": 1053
       };
       var pScrollTo = {
         "Taiwan": 0,
-        "Taimali_River": 345,
-        "Heping_Power_Plant": 698,
-        "Taipei_Harbor": 1061,
-        "Datan_Power_Plant": 1411
+        "Taimali_River": 320,
+        "Heping_Power_Plant": 666,
+        "Taipei_Harbor": 1028,
+        "Datan_Power_Plant": 1373
       };
       // Handles the sending of cross-domain iframe requests.
       function post(type, data) {
@@ -44,7 +47,7 @@
         pm.bind("from-timemachine-slide-changed", function(slideTitle) {
           console.log("Iframe slide changed:", slideTitle);
           slideTitle = slideTitle.split(' ').join('_');
-          $(document.body).animate({
+          $("body, html").animate({
             scrollTop: pScrollTo[slideTitle]
           }, {
             duration: 1000,
@@ -81,20 +84,6 @@
           }
           lastScrollTop = currentScrollTop;
         });
-        // Scroll the page to the top when initially loaded
-        setTimeout(function() {
-          $(document.body).animate({
-            scrollTop: 0
-          }, {
-            duration: 1000,
-            start: function() {
-              enableIframeRequest = false;
-            },
-            done: function() {
-              enableIframeRequest = true;
-            }
-          });
-        }, 200);
       }
 
       $(init);
@@ -123,31 +112,34 @@
       </div>
       <div id="body" style="margin-top:5px;">
         <div id="embed-fixed" style="position:fixed;">
-          <iframe name="time_machine_iframe" id="time_machine_iframe" width="942" height="495" src="http://yenchiah.cmucreatelab.org/timemachine-viewer-demo/tests/landsat.html#presentation=EKDkDXcLtihk7t1Q_Taiwan_DkDahRXiWQ7t5hBTyphoon%20Morakot%20on%20August%202009%20brought%20extreme%20amount%20of%20rain%20and%20caused%20river%20bank%20collapse%20on%20the%20mouth%20area%2E_Taimali%20River_DkDctb4iFdCu5hBA%20coal-fired%20power%20plant%20in%20a%20cement%20industrial%20park%20used%20to%20support%20the%20massive%20power%20needed%20for%20cement%20production%2E_Heping%20Power%20Plant_DkDa7PJjHK_t5hBTaipei%20Harbor%20is%20an%20artificial%20harbor%20built%20by%20land%20reclamation%20and%20mainly%20used%20for%20operations%20of%20large%20container%20ships%2E_Taipei%20Harbor_DkDUP_Gj937t5hBA%20gas-fired%20combined-cycle%20thermal%20power%20plant%2E%20It%20emits%20less%20carbon%20dioxide%20and%20thus%20is%20more%20environmental%20friendly%2E_Datan%20Power%20Plant_DkDYMp3igp2t5hB_Taichung%20Power%20Plant_DkDSeu0ifl1t5hB_Zhangbin%20Industrial_DkDZzyuijjzt5hB_Naphtha%20Cracking_DkDUZ1eiiOzt5hB_Anping%20Harbor_BAXtCWiQ80t5hB_Kaohsiung%20Harbor_Taiwan%20Coast%20Line_B" frameborder="0"></iframe>
+          <iframe name="time_machine_iframe" id="time_machine_iframe" width="943" height="495" src="http://yenchiah.cmucreatelab.org/timemachine-viewer-demo/tests/landsat.html#presentation=EKDkDXcLtihk7t1Q_Taiwan_DkDahRXiWQ7t5hBTyphoon%20Morakot%20on%20August%202009%20brought%20extreme%20amount%20of%20rain%20and%20caused%20river%20bank%20collapse%20on%20the%20mouth%20area%2E_Taimali%20River_DkDctb4iFdCu5hBA%20coal-fired%20power%20plant%20in%20a%20cement%20industrial%20park%20used%20to%20support%20the%20massive%20power%20needed%20for%20cement%20production%2E_Heping%20Power%20Plant_DkDa7PJjHK_t5hBTaipei%20Harbor%20is%20an%20artificial%20harbor%20built%20by%20land%20reclamation%20and%20mainly%20used%20for%20operations%20of%20large%20container%20ships%2E_Taipei%20Harbor_DkDUP_Gj937t5hBA%20gas-fired%20combined-cycle%20thermal%20power%20plant%2E%20It%20emits%20less%20carbon%20dioxide%20and%20thus%20is%20more%20environmental%20friendly%2E_Datan%20Power%20Plant_DkDYMp3igp2t5hB_Taichung%20Power%20Plant_DkDSeu0ifl1t5hB_Zhangbin%20Industrial_DkDZzyuijjzt5hB_Naphtha%20Cracking_DkDUZ1eiiOzt5hB_Anping%20Harbor_BAXtCWiQ80t5hB_Kaohsiung%20Harbor_Taiwan%20Coast%20Line_B" frameborder="0"></iframe>
         </div>
         <div id="embed-description-scroll">
           <h2>Landscape Changes Along Taiwan's Coastline in Two Decades</h2>
           <table>
             <tr>
-              <td rowspan="2"><a href="../img/timelapse-story-telling/Taiwan-Coastline.jpg" target="_blank"><img border="0" class="imgLeft" src="../img/timelapse-story-telling/Taiwan-Coastline.jpg" /><a>
+              <td rowspan="2">
+                <a href="../img/timelapse-story-telling/Taiwan-Coastline.jpg" target="_blank"><img border="0" class="imgLeft" src="../img/timelapse-story-telling/Taiwan-Coastline.jpg" /><a>
               </td>
               <td>
-              <p>
-                For the last two decades, the landscape of Taiwan's coastline changes dramatically due to urbanization and natural disasters.
-                Nine areas that can be seen clearly on satellite images are highlighted on the left diagram.
-                Among these changes, there are three important power plants, three harbor extensions, two newly constructed industrial parks, and the mouth of a river.
-                They show how an island demands new lands during the industrial development and how natural disasters impact people living on the east coast facing the Pacific Ocean.
-              </p></td>
+                <p>
+                  For the last two decades, the landscape of Taiwan's coastline changes dramatically due to urbanization and natural disasters.
+                  Nine areas that can be seen clearly on satellite images are highlighted on the left diagram.
+                  Among these changes, there are three important power plants, three harbor extensions, two newly constructed industrial parks, and the mouth of a river.
+                  They show how an island demands new lands during the industrial development and how natural disasters impact people living on the east coast facing the Pacific Ocean.
+                </p>
+              </td>
             </tr>
             <tr>
               <td>
-              <p>
-                Traditional Chinese Translation:<br>
-                台灣的海岸線因為都市化與自然災害，在近二十年內產生了重大的改變。
-                左圖中標註了九個可以由衛星影像清楚地看到地貌改變的地點。
-                其中涵蓋了三座重要的發電廠、三個港口的興建與擴建、兩個新規劃的工業園區、與一條河流的出海口。
-                這些變化顯示海島國家在工業化過程中對土地的需求和自然災害對面向太平洋的東岸居民的影響。
-              </p></td>
+                <p>
+                  Traditional Chinese Translation:<br>
+                  台灣的海岸線因為都市化與自然災害，在近二十年內產生了重大的改變。
+                  左圖中標註了九個可以由衛星影像清楚地看到地貌改變的地點。
+                  其中涵蓋了三座重要的發電廠、三個港口的興建與擴建、兩個新規劃的工業園區、與一條河流的出海口。
+                  這些變化顯示海島國家在工業化過程中對土地的需求和自然災害對面向太平洋的東岸居民的影響。
+                </p>
+              </td>
             </tr>
           </table>
           <h2>Change 1: Taimali River, Taitung</h2>
@@ -155,12 +147,10 @@
             <img border="0" class="imgSmall" src="../img/timelapse-story-telling/Taimali_.gif" />&nbsp; <img border="0" class="imgSmall" src="../img/timelapse-story-telling/Taimali1.jpg" />&nbsp; <img border="0" class="imgSmall" src="../img/timelapse-story-telling/Taimali2.jpg" />
           </div>
           <p>
-            The landscape of Taimali River mouth is changed permanently by the natural disaster.
-            On August 2009, Typhoon Morakot came from the Pacific Ocean with 90 mph (150 km/h) peaking wind and 109.3 inch (2777 mm) peaking rainfall.
-            The extreme amount of rain caused the sudden rise in river water level and the collapse of river bank.
-            The water flooded the mouth area and resulted in the destruction of bridges, railways, buildings, and farms as shown in the right two images above retrieved from <a href="http://digimuse.nmns.edu.tw/taiwanlandform2/02_east/pageB/pageB_04_285.html">
-            Taiwan National Museum of Natural Science</a>
-            .
+            On August 2009, the landscape of Taimali River mouth is changed by Typhoon Morakot coming from the Pacific Ocean with 90 mph (150 km/h) peaking wind and 109.3 inch (2777 mm) peaking rainfall.
+            The extreme amount of rain caused the sudden rise in water level and the collapse of river bank.
+            The water flooded the mouth area and resulted in the destruction of bridges, railways, buildings, and farms as shown in the right two images above retrieved from
+            <a href="http://digimuse.nmns.edu.tw/taiwanlandform2/02_east/pageB/pageB_04_285.html">Taiwan National Museum of Natural Science</a>.
           </p>
           <h2>Change 2: Heping Power Plant, Hualien</h2>
           <div>
@@ -171,9 +161,8 @@
             It is owned by Taiwan Cement Corporation and used to support the massive power needed for cement production.
             It generates 1320 Megawatt per year and is the largest power plant on Taiwan’s east coast.
             In the timelapse, the areas that change from green to white indicate limestone mines.
-            The mining process removes the top of several mountains as shown in the right two images above retrieved from <a href="https://www.flickr.com/photos/aerofoto/">
-            Taiwan Aerial Imaging</a>
-            .
+            The mining process removes the top of several mountains as shown in the right two images above retrieved from
+            <a href="https://www.flickr.com/photos/aerofoto/">Taiwan Aerial Imaging</a>.
           </p>
           <h2>Change 3: Taipei Harbor, Taipei</h2>
           <div>
@@ -181,14 +170,10 @@
           </div>
           <p>
             Taipei Harbor is an artificial harbor built by land reclamation near Taiwan’s capital city, Taipei.
-            It is designed to be an auxiliary harbor of the largest international one, Keelung Harbor, in north Taiwan and will possibly replace Keelung Harbor in the future.
+            It is designed to be an auxiliary harbor of the largest one, Keelung Harbor, in north Taiwan and will possibly replace Keelung Harbor in the future.
             Ports on the harbor are mainly used for operations of large container ships.
-            The harbor shares bulk cargo volume with Keelung Harbor and thus reduces the heavy traffic load in central Taipei area.
-            Right two images above are retrieved from <a href="http://www.tpport.gov.tw/tpport/EnRedirectForward.do">
-            Taipei Port Branch Office website</a>
-            and <a href="http://zh.wikipedia.org/wiki/%E5%8F%B0%E5%8C%97%E6%B8%AF">
-            Wikipedia</a>
-            .
+            The harbor shares cargo volume with Keelung Harbor and thus reduces the traffic load in central Taipei area.
+            The right two images above are retrieved from <a href="http://www.tpport.gov.tw/tpport/EnRedirectForward.do">Taipei Port Office website</a> and <a href="http://zh.wikipedia.org/wiki/%E5%8F%B0%E5%8C%97%E6%B8%AF">Wikipedia</a>.
           </p>
           <h2>Change 4: Datan Power Plant, Taoyuan</h2>
           <div>
@@ -198,23 +183,26 @@
             Datan Power Plant is a gas-fired combined-cycle thermal power plant located in Taoyuan.
             It balances the power needed between northern and southern Taiwan.
             Although using liquefied natural gas costs more, it emits less carbon dioxide and thus is more environmental friendly and reduces the air pollution.
-            Combining several thermodynamic cycles like reusing the waste heat of a previous heat engine improves the overall efficiency and reduces fuel cost.
-            In addition, the power plant also has several wind power units operated by the wind from Taiwan Strait.
-            The right two images above are retrieved from <a href="http://en.wikipedia.org/wiki/Tatan_Power_Plant">
-            Wikipedia</a>
-            and <a href="http://www.taipower.com.tw/e_content/index.aspx">
-            Taiwan Power Company’s official website</a>
-            .
+            Combining thermodynamic cycles like reusing the waste heat of a previous heat engine improves the overall efficiency and reduces fuel cost.
+            The power plant also has wind power units operated by the wind from Taiwan Strait.
+            The right two images above are retrieved from <a href="http://en.wikipedia.org/wiki/Tatan_Power_Plant">Wikipedia</a> and <a href="http://www.taipower.com.tw/e_content/index.aspx">Taiwan Power Company’s website</a>.
           </p>
           <div id="footer">
             <a href="http://www.ri.cmu.edu/">
-            The Robotics Institute</a>
-            &nbsp;| <a href="http://www.cmu.edu">
-            Carnegie Mellon University</a>
-            &nbsp;| <a href="mailto:info@cmucreatelab.org">
-            info@cmucreatelab.org</a>
-            &nbsp;| <a href="tel:+14122686723">
-            412-268-6723</a>
+            The Robotics Institute
+            </a>
+            &nbsp;|
+            <a href="http://www.cmu.edu">
+            Carnegie Mellon University
+            </a>
+            &nbsp;|
+            <a href="mailto:info@cmucreatelab.org">
+            info@cmucreatelab.org
+            </a>
+            &nbsp;|
+            <a href="tel:+14122686723">
+            412-268-6723
+            </a>
           </div>
         </div>
       </div>

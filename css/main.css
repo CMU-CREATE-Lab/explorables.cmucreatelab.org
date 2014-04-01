@@ -65,7 +65,7 @@ a {
 
 #header {
   text-align: center;
-  width: 943px;
+  width: 944px;
   background-color: #ededed;
 }
 
@@ -190,15 +190,22 @@ a {
 
 #embed-description-scroll p {
   font-size: 12pt;
+  line-height: 19px;
   margin-top: 20px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 #embed-description-scroll h2 {
   margin-top: 20px;
+  line-height: 25px;
   margin-bottom: 0px;
+  font-size: 16pt;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #embed-description-scroll .imgLeft {
