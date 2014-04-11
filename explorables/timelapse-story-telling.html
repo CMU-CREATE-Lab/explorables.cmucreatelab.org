@@ -6,9 +6,6 @@
     <link href="../css/main.css" media="screen" rel="stylesheet" type="text/css"/>
     <script src="../js/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="../js/postmessage.js" type="text/javascript"></script>
-    <style>
-      p
-    </style>
     <script>
       var lastScrollTop = 0;
       var enableIframeRequest = true;
@@ -61,7 +58,6 @@
         });
         $(window).scroll(function(event) {
           var currentScrollTop = $(event.currentTarget).scrollTop();
-          console.log(currentScrollTop);
           if (enableIframeRequest) {
             // Scroll down
             if (lastScrollTop < p1.Taimali_River && currentScrollTop >= p1.Taimali_River)
