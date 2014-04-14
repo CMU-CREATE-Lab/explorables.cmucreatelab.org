@@ -121,7 +121,7 @@ a {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #cmu-logo-detail-page {
-    background-image: url('../img/CM_logo_horiz_red.png@2x.png');
+    background-image: url('../img/CM_logo_horiz_red@2x.png');
     background-size: 200px 30px;
   }
 }
