@@ -211,6 +211,10 @@ a {
   font-size: large;
 }
 
+#embed-description h3 {
+  margin-top: 0;
+}
+
 #embed-fixed {
   z-index: 2;
   top: 45px;
