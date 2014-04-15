@@ -4,18 +4,21 @@
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -37,14 +40,18 @@ a {
 
 @font-face {
   font-family: 'klavika';
-  src: url("fonts/Klavika-Light.otf") format("opentype");
+  src: url('fonts/Klavika-Light.eot');
+  src: url('fonts/Klavika-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Klavika-Light.otf') format('opentype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'klavika';
-  src: url("fonts/Klavika-Medium.otf") format("opentype");
+  src: url('fonts/Klavika-Medium.eot');
+  src: url('fonts/Klavika-Medium.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Klavika-Medium.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -57,6 +64,7 @@ a {
 .create-lab-font {
   font-family: klavika, Helvetica, Arial, sans-serif !important;
   padding-top: 6px;
+  width: 310px;
 }
 
 .title-text {
@@ -143,7 +151,7 @@ a {
 .thumbnail a {
   width: 244px;
   float: left;
-  height: 310px;
+  height: 316px;
   border-radius: 2px;
   color: black;
   border: 0;
@@ -173,8 +181,12 @@ a {
   text-align: left;
   margin-top: 2px;
   margin-left: 15px;
-  font-size: 10pt;
-  width: 217px;
+  font-size: 13px;
+  width: 221px;
+  padding: 0px;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  line-height: 18px;
 }
 
 #footer {
