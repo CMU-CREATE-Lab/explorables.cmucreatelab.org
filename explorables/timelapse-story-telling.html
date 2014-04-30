@@ -32,7 +32,7 @@
       // Handles the sending of cross-domain iframe requests.
       function post(type, data) {
         pm({
-          target: window.frames["time_machine_iframe"],
+          target: document.getElementById("time_machine_iframe").contentWindow,
           type: type,
           data: data,
           url: "http://yenchiah.cmucreatelab.org/timemachine-viewer-demo/tests/landsat.html",
