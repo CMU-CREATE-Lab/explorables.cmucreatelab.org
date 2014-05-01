@@ -61,10 +61,11 @@ a {
   padding-top: 0px;
 }
 
-.create-lab-font {
+.logo {
   font-family: klavika, Helvetica, Arial, sans-serif !important;
   padding-top: 6px;
   width: 310px;
+  height: 30px;
 }
 
 .title-text {
@@ -111,12 +112,47 @@ a {
 }
 
 #site-description {
-  font-size: 16px;
-  text-align: left;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 826px;
+  width: 100%;
+}
+
+#site-description td {
+  width: 50%;
+}
+
+#site-description p {
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#site-description h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+#site-description .what p {
+  margin-left: 69px;
+  width: 321px;
+}
+
+#site-description .what h3 {
+  margin-left: 69px;
+}
+
+#site-description .who p {
+  margin-left: 83px;
+  width: 321px;
+}
+
+#site-description .who h3 {
+  margin-left: 83px;
 }
 
 #cmu-logo-detail-page {
@@ -144,7 +180,7 @@ a {
 #body-index {
   overflow: hidden;
   width: 1100px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: -17px;
 }
 
@@ -152,14 +188,14 @@ a {
   width: 244px;
   float: left;
   height: 316px;
-  border-radius: 2px;
+  border-radius: 4px;
   color: black;
-  border: 0;
+  border: 1px solid rgba(0,0,0,0);
 }
 
 .thumbnail a:hover {
-  color: white;
-  background: #e28b8b;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 
 .thumbnail-image {
