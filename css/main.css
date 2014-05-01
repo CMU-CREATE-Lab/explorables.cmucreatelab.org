@@ -56,11 +56,6 @@ a {
   font-style: normal;
 }
 
-.cmu-font {
-  float: right;
-  padding-top: 0px;
-}
-
 .logo {
   font-family: klavika, Helvetica, Arial, sans-serif !important;
   padding-top: 6px;
@@ -71,7 +66,7 @@ a {
 .title-text {
   float: left;
   font-size: 23pt;
-  color: black;
+  color: rgb(60,60,60);
   margin-right: 10px;
 }
 
