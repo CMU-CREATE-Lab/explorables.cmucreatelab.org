@@ -289,6 +289,11 @@
             <option name="TAB_SIZE" value="2" />
           </indentOptions>
         </codeStyleSettings>
+        <codeStyleSettings language="Python">
+          <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
+          <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+          <option name="PARENT_SETTINGS_INSTALLED" value="true" />
+        </codeStyleSettings>
         <codeStyleSettings language="SASS">
           <indentOptions>
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
