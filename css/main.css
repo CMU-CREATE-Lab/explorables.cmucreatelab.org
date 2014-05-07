@@ -167,17 +167,17 @@ a {
 
 #cmu-logo-header {
   position: relative;
-  width: 334px;
-  height: 30px;
+  width: 222px;
+  height: 20px;
   margin-top: 10px;
   background-image: url('../img/CMU_logo_horiz_black.png');
-  background-size: 334px 30px;
+  background-size: 222px 20px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #cmu-logo-header {
     background-image: url('../img/CMU_logo_horiz_black@2x.png');
-    background-size: 334px 30px;
+    background-size: 222px 20px;
   }
 }
 
