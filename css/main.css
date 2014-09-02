@@ -34,10 +34,6 @@ html, body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 @font-face {
   font-family: 'klavika';
   src: url('fonts/Klavika-Light.eot');
@@ -201,6 +197,7 @@ a {
   border-radius: 4px;
   color: black;
   border: 1px solid rgba(0,0,0,0);
+  text-decoration: none;
 }
 
 .thumbnail a:hover {
