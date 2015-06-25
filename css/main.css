@@ -299,7 +299,7 @@ html, body {
 #embed-description-scroll {
   z-index: 1;
   position: absolute;
-  top: 530px;
+  top: 550px;
   width: 960px;
   margin-left: 3px;
   text-align: left;
